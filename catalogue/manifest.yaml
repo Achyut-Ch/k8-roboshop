@@ -3,12 +3,12 @@ kind: ConfigMap
 metadata:
   name: catalogue
   namespace: roboshop
-   labels:
-     project: roboshop
-     tier: backend
-     component: catalogue
+  labels:
+    project: roboshop
+    tier: backend
+    component: catalogue
 data:
-  MONNGO: "true"
+  MONGO: "true"
   MONGO_URL: "mongodb://mongodb:27017/catalogue"
 ---
 apiVersion: apps/v1
