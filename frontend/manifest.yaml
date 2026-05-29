@@ -132,8 +132,11 @@ spec:
           periodSeconds: 10
         volumeMounts:
         - name: nginx-config
+          # bydefault it mounts and thinks as directory
           mountPath: /etc/nginx/nginx.conf
+          subPath: nginx.conf # this is the file name in configmap
           readOnly: true
+          
      
 ---
 apiVersion: v1
